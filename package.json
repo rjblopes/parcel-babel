@@ -1,0 +1,66 @@
+{
+  "name": "parcel-babel",
+  "version": "1.0.0",
+  "description": "Preact template with Parcel and Babel",
+  "main": "src/index.html",
+  "alias": {
+    "react": "preact/compat",
+    "react-dom/test-utils": "preact/test-utils",
+    "react-dom": "preact/compat"
+  },
+  "scripts": {
+    "build": "parcel build src/index.html",
+    "start": "parcel src/index.html",
+    "test": "jest",
+    "flow": "flow status",
+    "lint": "eslint src"
+  },
+  "keywords": [
+    "template",
+    "preact",
+    "parcel"
+  ],
+  "license": "MIT",
+  "author": "Ricardo Lopes <ricardo.lopes@ikual.com>",
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "@babel/plugin-transform-react-jsx": "^7.8.3",
+    "@babel/preset-env": "^7.7.7",
+    "@babel/preset-flow": "^7.7.4",
+    "@emotion/babel-plugin-jsx-pragmatic": "^0.1.5",
+    "babel-eslint": "^10.0.3",
+    "babel-jest": "^25.1.0",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-preact-pure": "^2.2.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-import-resolver-babel-module": "^5.1.2",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-jest": "^23.8.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.17.0",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "flow-bin": "^0.119.0",
+    "jest": "^25.1.0",
+    "jest-environment-jsdom-fourteen": "^1.0.1",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-static-files-copy": "^2.2.1"
+  },
+  "dependencies": {
+    "preact": "^10.3.2",
+    "styled-components": "^4.4.1"
+  },
+  "staticFiles": {
+    "staticPath": "static",
+    "watcherGlob": "*/**"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "<rootDir>enzyme.config.js"
+    ],
+    "testEnvironment": "jest-environment-jsdom-fourteen"
+  },
+  "repository": "git@github.com:rjblopes/parcel-babel.git"
+}

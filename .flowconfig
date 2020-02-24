@@ -1,0 +1,25 @@
+[ignore]
+
+; Ignore dist folder
+<PROJECT_ROOT>/dist/.*
+
+; Ignore public folder
+<PROJECT_ROOT>/public/.*
+
+.*/node_modules/@parcel/.*
+
+[untyped]
+
+[include]
+
+[libs]
+<PROJECT_ROOT>/flow-typed/npm/.*
+
+[lints]
+
+[options]
+emoji=true
+suppress_type=$FlowFixMe
+suppress_type=$FlowTODO
+
+[strict]
